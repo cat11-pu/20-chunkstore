@@ -1,0 +1,11 @@
+{
+  "chunk_size": 4,
+  "puts": [
+    {"name": "a", "data": "AAAABBBBCCCC"},
+    {"name": "b", "data": "AAAABBBBCCCC"},
+    {"name": "c", "data": "AAAADDDDEEEE"},
+    {"name": "d", "data": "ZZZZ"}
+  ],
+  "delete": "a",
+  "keep": "b"
+}
