@@ -1,4 +1,4 @@
-"""server.py：本机服务（基线：put/get/delete/stats）。"""
+"""server.py：本机服务（put/get/delete/gc/recover/stats）。"""
 from __future__ import annotations
 
 import json
@@ -7,7 +7,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 from chunkstore import ChunkStore
 
-STORE = ChunkStore()
+STORE = ChunkStore(data_dir="data")
 
 
 class Handler(BaseHTTPRequestHandler):

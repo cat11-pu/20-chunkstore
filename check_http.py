@@ -48,6 +48,8 @@ def main() -> int:
     print("恢复后块数 =", recovered.get("chunks"))
     print("被删对象是否还能读到 =", read_back.get("data") is not None)
     print("共享块所属对象仍可读 =", keeps.get("data"))
+    print("块大小 =", after_put.get("chunk_size"))
+    print("回收的块 =", collected.get("collected_chunks"))
     server.shutdown()
     return 0
 
